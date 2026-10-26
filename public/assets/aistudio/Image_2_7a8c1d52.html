@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Safar Mobility - Customer Cab &amp; Tour Booking Portal</title><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#bcc7de","surface-container-lowest":"#ffffff","surface-tint":"#545f73","primary":"#091426","inverse-on-surface":"#eef0ff","on-primary-fixed":"#111c2d","surface-container-high":"#e2e7ff","error":"#ba1a1a","outline-variant":"#c5c6cd","secondary-container":"#316bf3","inverse-surface":"#283044","on-secondary":"#ffffff","on-primary-container":"#8590a6","tertiary-container":"#3c2300","tertiary-fixed":"#ffddb8","secondary-fixed":"#dbe1ff","tertiary":"#201100","on-error-container":"#93000a","outline":"#75777d","secondary-fixed-dim":"#b4c5ff","on-secondary-container":"#fefcff","on-surface":"#131b2e","primary-fixed":"#d8e3fb","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary-container":"#c88000","secondary":"#0051d5","on-background":"#131b2e","on-tertiary-fixed-variant":"#653e00","on-surface-variant":"#45474c","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb95f","on-primary":"#ffffff","surface-variant":"#dae2fd","on-secondary-fixed-variant":"#003ea8","background":"#faf8ff","error-container":"#ffdad6","on-secondary-fixed":"#00174b","inverse-primary":"#bcc7de","surface-container":"#eaedff","surface":"#faf8ff","surface-dim":"#d2d9f4","on-error":"#ffffff","surface-container-highest":"#dae2fd","primary-container":"#1e293b","on-tertiary-fixed":"#2a1700","on-primary-fixed-variant":"#3c475a"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem",margin:"1rem",gutter:"1rem","space-md":"1rem","gutter-mobile":"0.75rem","space-xl":"2rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xs":"0.25rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"500"}],"headline-xl":["32px",{lineHeight:"40px",fontWeight:"800"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"700"}],"headline-lg":["24px",{lineHeight:"32px",fontWeight:"700"}],"label-lg":["16px",{lineHeight:"20px",fontWeight:"700"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"600"}],"headline-xl-mobile":["26px",{lineHeight:"34px",fontWeight:"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">local_taxi</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">SAFAR</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Mobility</span></div></div><nav class="hidden xl:flex items-center gap-2" data-active-classes="bg-surface-container text-primary font-label-md rounded-lg"><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-portal-home" href="#">Home</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-vehicle-select" href="#">Explore Services</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-tour-package-detail" href="#">Tour Packages</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-my-trips-dashboard" href="#">My Trips</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-booking-summary-payment" href="#">Offers</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-live-trip-tracking" href="#">24x7 Support</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="web-sign-in-authentication" href="#">Sign In</a></nav><div class="flex items-center gap-4 shrink-0"><a class="flex items-center gap-3 bg-surface-container-low hover:bg-surface-container py-1.5 pl-3 pr-2 rounded-full cursor-pointer transition-colors no-underline" data-path="web-profile-saved-addresses" href="#"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Rahul Sharma</span><div class="flex items-center justify-end gap-1"><span class="material-symbols-outlined text-on-tertiary-container text-[14px]">hotel_class</span><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase">Gold Member</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-10 lg:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest">
+<!-- Left Panel: Brand Showcase & Trust Credentials -->
+<div class="lg:col-span-6 relative flex flex-col justify-between p-8 sm:p-12 lg:p-16 bg-primary text-on-primary overflow-hidden min-h-[620px]">
+<!-- Subtle Ambient Gradient Backdrop & Living Pattern -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95 pointer-events-none"></div>
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-tertiary-fixed-dim/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Header & Status Tag -->
+<div class="relative z-10 space-y-6">
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest/10 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">India's Premier Highway Transit</span>
+</div>
+<div class="space-y-4 max-w-lg">
+<h1 class="font-headline-xl text-headline-xl text-on-primary tracking-tight leading-tight">
+              Elevated Intercity &amp; Airport Mobility Across India.
+            </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
+              Experience premium chauffeurs, guaranteed on-time airport transfers, and curated holiday tour packages with transparent all-inclusive fares.
+            </p>
+</div>
+</div>
+<!-- Transit Image Snapshot Card -->
+<div class="relative z-10 my-8 rounded-xl overflow-hidden shadow-lg bg-primary-container/80">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="A luxurious modern sedan gliding smoothly down a pristine wide expressway at dusk in India, illuminated by golden highway lights with glowing red tail streaks, refined cinematic mood, deep sapphire sky and high contrast reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4r19OGdAm9dU17KEryUpJftFR0Tq0kUN2D5ebzp-Ws1aBzdYu6m2PaXsazbnGIYogpOVabGe9tTo3HV7n6bDdvwpYst10Oo2_bFrvpvYUxr5bEVc7dtLSQ2LWsrqKybgH5HM0vf-F8stl-6TYOZLUe2zDsSYgbIoUPvNA7fl9Aa780Vn9pdip9a8T5K5BppxDO8gc_sO4omAHGBMc_S33EWdWUTiNeCGl1YCww70pZevQYXkMfeGf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">verified</span>
+<span class="font-label-md text-label-md">Direct Corridor Express</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-lowest/20 backdrop-blur-sm">Tier-1 Fleet</span>
+</div>
+</div>
+</div>
+<!-- Trust Highlights List -->
+<div class="relative z-10 space-y-4">
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary">100% Police-Verified &amp; Chauffeur Trained Drivers</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Thorough background checks, behavioral grooming &amp; defensive driving certifications.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">price_check</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary">Zero Surge Pricing &amp; Transparent Corridor Toll Rates</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Fixed upfront estimates. Zero hidden state road tax or unexpected night surcharges.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-primary">24x7 SOS Telematics &amp; Dedicated Trip Support Desk</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Real-time GPS boundary alerts, speed sensors &amp; instantaneous live responder support.</p>
+</div>
+</div>
+<!-- Social Proof Pill -->
+<div class="pt-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-container-lowest/10 backdrop-blur-sm text-on-primary">
+<div class="flex -space-x-1.5 items-center">
+<span class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-[10px] font-bold">R</span>
+<span class="w-6 h-6 rounded-full bg-tertiary flex items-center justify-center text-[10px] font-bold">A</span>
+<span class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center text-[10px] font-bold">P</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed-dim leading-none">4.9★</span>
+<span class="font-body-sm text-body-sm text-primary-fixed-dim leading-tight">Over 500,000+ highway &amp; airport journeys completed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Authentication Card -->
+<div class="lg:col-span-6 p-8 sm:p-12 lg:p-16 flex flex-col justify-center bg-surface-container-lowest">
+<div class="max-w-md w-full mx-auto space-y-6">
+<!-- Brand Wordmark & Header -->
+<div class="flex items-center gap-3 mb-2">
+<div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">local_taxi</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">SAFAR</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Mobility Portal</span>
+</div>
+</div>
+<!-- Mode Switcher Tabs -->
+<div class="flex rounded-xl bg-surface-container-low p-1.5 gap-1 shadow-inner">
+<button class="flex-1 py-2.5 rounded-lg font-label-md text-label-md text-primary bg-surface-container-lowest shadow-sm transition-all text-center" id="tab-signin" type="button">
+              Sign In
+            </button>
+<button class="flex-1 py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center" id="tab-signup" type="button">
+              Create Account
+            </button>
+</div>
+<!-- Welcome Messaging -->
+<div class="space-y-1">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight" id="form-heading">
+              Welcome back
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant" id="form-subheading">
+              Enter your mobile phone number to sign in or get started.
+            </p>
+</div>
+<!-- Primary Auth View (Phone Entry) -->
+<div class="space-y-5" id="view-phone-entry">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Mobile Number</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Auto-detects OTP</span>
+</label>
+<!-- Phone Input Group -->
+<div class="flex items-center rounded-xl bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px] focus-within:shadow-secondary transition-all h-[52px] overflow-hidden px-3 gap-2">
+<!-- Country Selector -->
+<div class="flex items-center gap-1.5 shrink-0 pr-3 border-r border-outline-variant/30">
+<span class="text-base select-none">🇮🇳</span>
+<span class="font-label-md text-label-md text-primary font-bold">+91</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</div>
+<!-- Number Input -->
+<input class="w-full bg-transparent font-body-lg text-body-lg text-on-surface placeholder:text-outline focus:outline-none tracking-wide" id="phone-input" maxlength="10" placeholder="98765 43210" type="tel" value="9876543210"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 pt-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">mark_chat_read</span>
+                Instant verification link and OTP sent via WhatsApp &amp; SMS.
+              </p>
+</div>
+<!-- Primary Action Button -->
+<button class="w-full h-[52px] rounded-xl bg-secondary hover:bg-secondary-container active:scale-[0.99] text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_8px_18px_-4px_rgba(0,81,213,0.35)] transition-all cursor-pointer" id="btn-get-otp" type="button">
+<span>Get OTP &amp; Continue</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- Secondary Auth View: OTP Verification (Interactive State) -->
+<div class="space-y-5 hidden" id="view-otp-entry">
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sent code to</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="display-phone">+91 98765 43210</span>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:underline cursor-pointer flex items-center gap-1" id="btn-edit-number" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit</span>
+</button>
+</div>
+<!-- OTP Input 4-Box Row -->
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface">Enter 4-Digit One-Time Password</label>
+<div class="grid grid-cols-4 gap-3">
+<input class="otp-digit h-14 text-center font-headline-md text-headline-md text-primary bg-surface-container-low rounded-xl focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px] focus:shadow-secondary focus:outline-none transition-all" maxlength="1" type="text" value="7"/>
+<input class="otp-digit h-14 text-center font-headline-md text-headline-md text-primary bg-surface-container-low rounded-xl focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px] focus:shadow-secondary focus:outline-none transition-all" maxlength="1" type="text" value="4"/>
+<input class="otp-digit h-14 text-center font-headline-md text-headline-md text-primary bg-surface-container-low rounded-xl focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px] focus:shadow-secondary focus:outline-none transition-all" maxlength="1" type="text" value="2"/>
+<input class="otp-digit h-14 text-center font-headline-md text-headline-md text-primary bg-surface-container-low rounded-xl focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px] focus:shadow-secondary focus:outline-none transition-all" maxlength="1" type="text" value="9"/>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resend OTP in <strong class="text-primary font-bold">0:45s</strong></span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary uppercase tracking-wider" type="button">Resend via WhatsApp</button>
+</div>
+</div>
+<!-- Verify Button -->
+<button class="w-full h-[52px] rounded-xl bg-secondary hover:bg-secondary-container active:scale-[0.99] text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_8px_18px_-4px_rgba(0,81,213,0.35)] transition-all cursor-pointer" id="btn-verify-otp" type="button">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+<span>Verify &amp; Access Trips</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="relative flex items-center justify-center py-2">
+<div class="w-full border-t border-surface-container-high"></div>
+<span class="absolute bg-surface-container-lowest px-3 font-label-sm text-label-sm text-outline uppercase tracking-wider">
+              Or continue with
+            </span>
+</div>
+<!-- 1-Click Alternate Authentications -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<!-- Google Login -->
+<button class="h-12 px-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low shadow-sm flex items-center justify-center gap-2.5 transition-all text-on-surface cursor-pointer group" type="button">
+<svg class="w-4 h-4 shrink-0" viewbox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.15z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span class="font-label-md text-label-md group-hover:text-primary">Google</span>
+</button>
+<!-- Corporate Enterprise SSO -->
+<button class="h-12 px-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low shadow-sm flex items-center justify-center gap-2 transition-all text-on-surface cursor-pointer group" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">domain</span>
+<span class="font-label-md text-label-md group-hover:text-primary">Corporate SSO</span>
+</button>
+</div>
+<!-- Trust Badges & Policies -->
+<div class="pt-3 space-y-3">
+<div class="flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">security</span>
+<span class="font-label-sm text-label-sm">256-Bit Bank-Grade Transit Telematics Encryption</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline text-center leading-relaxed">
+              By continuing, you agree to Safar Mobility's 
+              <a class="text-secondary hover:underline" href="#">Terms of Service</a>, 
+              <a class="text-secondary hover:underline" href="#">Privacy Policy</a>, and 
+              <a class="text-secondary hover:underline" href="#">Corridor Transit Standards</a>.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const tabSignIn = document.getElementById('tab-signin');
+    const tabSignUp = document.getElementById('tab-signup');
+    const formHeading = document.getElementById('form-heading');
+    const formSubheading = document.getElementById('form-subheading');
+    const btnGetOtp = document.getElementById('btn-get-otp');
+    const btnVerifyOtp = document.getElementById('btn-verify-otp');
+    const btnEditNumber = document.getElementById('btn-edit-number');
+    const phoneInput = document.getElementById('phone-input');
+    const displayPhone = document.getElementById('display-phone');
+    const viewPhoneEntry = document.getElementById('view-phone-entry');
+    const viewOtpEntry = document.getElementById('view-otp-entry');
+    const otpInputs = document.querySelectorAll('.otp-digit');
+
+    // Switch between Sign In / Sign Up tabs
+    if (tabSignIn && tabSignUp) {
+      tabSignIn.addEventListener('click', () => {
+        tabSignIn.className = 'flex-1 py-2.5 rounded-lg font-label-md text-label-md text-primary bg-surface-container-lowest shadow-sm transition-all text-center';
+        tabSignUp.className = 'flex-1 py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center';
+        if (formHeading) formHeading.textContent = 'Welcome back';
+        if (formSubheading) formSubheading.textContent = 'Enter your mobile phone number to sign in or get started.';
+      });
+
+      tabSignUp.addEventListener('click', () => {
+        tabSignUp.className = 'flex-1 py-2.5 rounded-lg font-label-md text-label-md text-primary bg-surface-container-lowest shadow-sm transition-all text-center';
+        tabSignIn.className = 'flex-1 py-2.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center';
+        if (formHeading) formHeading.textContent = 'Create your Safar Account';
+        if (formSubheading) formSubheading.textContent = 'Join thousands enjoying verified drivers & zero surge tariffs.';
+      });
+    }
+
+    // Toggle OTP view
+    if (btnGetOtp && viewPhoneEntry && viewOtpEntry) {
+      btnGetOtp.addEventListener('click', () => {
+        const phoneVal = phoneInput.value.trim() || '9876543210';
+        if (displayPhone) {
+          displayPhone.textContent = '+91 ' + phoneVal;
+        }
+        viewPhoneEntry.classList.add('hidden');
+        viewOtpEntry.classList.remove('hidden');
+        if (otpInputs.length > 0) otpInputs[0].focus();
+      });
+    }
+
+    // Back to phone view
+    if (btnEditNumber && viewPhoneEntry && viewOtpEntry) {
+      btnEditNumber.addEventListener('click', () => {
+        viewOtpEntry.classList.add('hidden');
+        viewPhoneEntry.classList.remove('hidden');
+        if (phoneInput) phoneInput.focus();
+      });
+    }
+
+    // Auto-advance OTP inputs
+    otpInputs.forEach((input, index) => {
+      input.addEventListener('keyup', (e) => {
+        if (e.key >= '0' && e.key <= '9') {
+          if (index < otpInputs.length - 1) {
+            otpInputs[index + 1].focus();
+          }
+        } else if (e.key === 'Backspace') {
+          if (index > 0 && !input.value) {
+            otpInputs[index - 1].focus();
+          }
+        }
+      });
+    });
+
+    // Verification feedback
+    if (btnVerifyOtp) {
+      btnVerifyOtp.addEventListener('click', () => {
+        btnVerifyOtp.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Authenticating...</span>';
+        setTimeout(() => {
+          btnVerifyOtp.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Authenticated! Redirecting...</span>';
+          btnVerifyOtp.classList.remove('bg-secondary');
+          btnVerifyOtp.classList.add('bg-primary');
+        }, 800);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-auto"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-12"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"><div class="space-y-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">local_taxi</span></div><span class="font-headline-sm text-headline-sm text-primary">Safar Mobility</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Reliable intercity transfers, city rides, and holiday tour packages across 100+ transit corridors in India.</p></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3">Transit Services</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="web-vehicle-select" href="#">City Point-to-Point</a></li><li><a class="hover:text-primary transition-colors" data-path="web-vehicle-select" href="#">Outstation One-Way</a></li><li><a class="hover:text-primary transition-colors" data-path="web-vehicle-select" href="#">Airport Express Cabs</a></li><li><a class="hover:text-primary transition-colors" data-path="web-tour-package-detail" href="#">Curated Tour Packages</a></li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3">Customer Care</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="web-live-trip-tracking" href="#">24x7 Helpline</a></li><li><a class="hover:text-primary transition-colors" data-path="web-my-trips-dashboard" href="#">Track Live Booking</a></li><li><a class="hover:text-primary transition-colors" data-path="web-profile-saved-addresses" href="#">Safety &amp; Emergency Settings</a></li><li><a class="hover:text-primary transition-colors" data-path="web-sign-in-authentication" href="#">Sign In / Register</a></li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3">Emergency &amp; Helpline</h4><div class="p-3 rounded-xl bg-surface-container-low space-y-1"><p class="font-label-sm text-label-sm text-secondary uppercase">Direct Toll-Free</p><p class="font-headline-sm text-headline-sm text-on-surface">1800-420-SAFAR</p><p class="font-body-sm text-body-sm text-on-surface-variant">Instant SOS &amp; Road Assistance</p></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Safar Mobility Private Limited. All rights reserved.</p><div class="flex items-center gap-6"><a class="hover:text-on-surface transition-colors" data-path="web-live-trip-tracking" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="web-booking-summary-payment" href="#">Terms of Transit</a><a class="hover:text-on-surface transition-colors" data-path="web-trip-completed-invoice" href="#">Fare Breakdown</a></div></div></div></footer></body></html>

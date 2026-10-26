@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#091426"/>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="#1e293b" opacity="0.6"/>
+  <g transform="translate(106, 116) scale(12.5)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Taxi icon representation -->
+    <path d="M5 18H3c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h18c.6 0 1 .4 1 1v4c0 .6-.4 1-1 1h-2" fill="#0051d5" stroke="#0051d5"/>
+    <path d="M3 13L6 5h12l3 8" stroke="#ffffff"/>
+    <circle cx="7" cy="18" r="2.5" fill="#ffddb8" stroke="#ffddb8"/>
+    <circle cx="17" cy="18" r="2.5" fill="#ffddb8" stroke="#ffddb8"/>
+    <path d="M10 5l1-3h2l1 3" stroke="#ffddb8"/>
+  </g>
+  <text x="256" y="440" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="4">SAFAR</text>
+</svg>

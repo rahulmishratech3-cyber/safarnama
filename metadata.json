@@ -1,0 +1,6 @@
+{
+  "name": "Safar Mobility",
+  "description": "Premier intercity, airport transfer and curated holiday tour booking portal across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

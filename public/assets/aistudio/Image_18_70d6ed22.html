@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Safar Mobility - Customer Cab &amp; Tour Booking Portal</title><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#bcc7de","surface-container-lowest":"#ffffff","surface-tint":"#545f73","primary":"#091426","inverse-on-surface":"#eef0ff","on-primary-fixed":"#111c2d","surface-container-high":"#e2e7ff","error":"#ba1a1a","outline-variant":"#c5c6cd","secondary-container":"#316bf3","inverse-surface":"#283044","on-secondary":"#ffffff","on-primary-container":"#8590a6","tertiary-container":"#3c2300","tertiary-fixed":"#ffddb8","secondary-fixed":"#dbe1ff","tertiary":"#201100","on-error-container":"#93000a","outline":"#75777d","secondary-fixed-dim":"#b4c5ff","on-secondary-container":"#fefcff","on-surface":"#131b2e","primary-fixed":"#d8e3fb","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary-container":"#c88000","secondary":"#0051d5","on-background":"#131b2e","on-tertiary-fixed-variant":"#653e00","on-surface-variant":"#45474c","on-tertiary":"#ffffff","tertiary-fixed-dim":"#ffb95f","on-primary":"#ffffff","surface-variant":"#dae2fd","on-secondary-fixed-variant":"#003ea8","background":"#faf8ff","error-container":"#ffdad6","on-secondary-fixed":"#00174b","inverse-primary":"#bcc7de","surface-container":"#eaedff","surface":"#faf8ff","surface-dim":"#d2d9f4","on-error":"#ffffff","surface-container-highest":"#dae2fd","primary-container":"#1e293b","on-tertiary-fixed":"#2a1700","on-primary-fixed-variant":"#3c475a"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-lg":"1.5rem",margin:"1rem",gutter:"1rem","space-md":"1rem","gutter-mobile":"0.75rem","space-xl":"2rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xs":"0.25rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"500"}],"headline-xl":["32px",{lineHeight:"40px",fontWeight:"800"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"700"}],"headline-lg":["24px",{lineHeight:"32px",fontWeight:"700"}],"label-lg":["16px",{lineHeight:"20px",fontWeight:"700"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"600"}],"headline-xl-mobile":["26px",{lineHeight:"34px",fontWeight:"800"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-3 shrink-0"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[24px]">local_taxi</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">SAFAR</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Mobility</span></div></div><nav class="hidden xl:flex items-center gap-2" data-active-classes="bg-surface-container text-primary font-label-md rounded-lg"><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="px-3 py-2 transition-colors bg-surface-container text-primary font-label-md rounded-lg" data-path="explore-services" href="#">Explore Services</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="tour-packages" href="#">Tour Packages</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="my-trips" href="#">My Trips</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="offers" href="#">Offers</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" data-path="24x7-support" href="#">24x7 Support</a></nav><div class="flex items-center gap-4 shrink-0"><div class="flex items-center gap-3 bg-surface-container-low hover:bg-surface-container py-1.5 pl-3 pr-2 rounded-full cursor-pointer transition-colors"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface leading-tight">Rahul Sharma</span><div class="flex items-center justify-end gap-1"><span class="material-symbols-outlined text-on-tertiary-container text-[14px]">hotel_class</span><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase">Gold Member</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8">
+<div class="flex items-center gap-3 mb-6">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="font-label-md text-label-md">Back to Search</span>
+</a>
+<div class="h-4 w-px bg-outline-variant/40"></div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Step 2 of 4 • Cab Selection</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<section class="lg:col-span-8 flex flex-col gap-6">
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="flex flex-col items-center pt-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-secondary ring-4 ring-secondary/20"></span>
+<span class="w-0.5 h-10 bg-surface-container-high my-1"></span>
+<span class="w-3.5 h-3.5 rounded-sm bg-on-tertiary-container ring-4 ring-on-tertiary-container/20"></span>
+</div>
+<div class="space-y-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pickup Spot</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">Terminal 2 Express Corridor</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">12th Main, Indiranagar, Bengaluru</h3>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Destination</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kempegowda Int'l Airport (T2 Departure Ramp)</h3>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-end justify-between sm:justify-center border-t sm:border-t-0 pt-3 sm:pt-0 sm:pl-6 sm:border-l border-surface-container gap-3 shrink-0">
+<div class="flex sm:flex-col items-start sm:items-end gap-2 sm:gap-0.5 text-left sm:text-right">
+<div class="flex items-center gap-1.5 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">near_me</span>
+<span>38.5 km</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">timer</span>
+<span>Approx 55 mins</span>
+</div>
+<span class="inline-flex mt-1 items-center px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface-variant">One-Way Direct</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_location_alt</span>
+<span>Edit Route</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Select your ride</h2>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24 Cabs nearby</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fares inclusive of toll &amp; airport surcharge</span>
+</div>
+<div class="flex flex-col gap-4" id="vehicle-card-list">
+<div class="cab-option group relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-md transition-all cursor-pointer" data-cab-type="hatchback" data-eta="3 mins away" data-name="Hatchback" data-price="649">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+<div class="flex items-center gap-4">
+<div class="w-20 h-20 rounded-xl bg-surface-container-low flex items-center justify-center p-2 shrink-0">
+<span class="material-symbols-outlined text-[44px] text-primary">directions_car</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Hatchback</h4>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Budget Saver</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">WagonR, Tata Tiago or similar compact cab</p>
+<div class="flex flex-wrap items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">airline_seat_recline_normal</span> 4 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">luggage</span> 2 Bags</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">ac_unit</span> Fast AC</span>
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">schedule</span> 3 mins away</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between border-t md:border-t-0 pt-3 md:pt-0 gap-1 shrink-0">
+<div class="text-right">
+<span class="font-body-sm text-body-sm line-through text-on-surface-variant block">₹720</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">₹649</span>
+</div>
+<span class="select-indicator px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Select</span>
+</div>
+</div>
+</div>
+<div class="cab-option selected group relative bg-surface-container-lowest rounded-2xl p-5 shadow-md shadow-secondary/5 transition-all cursor-pointer ring-2 ring-secondary bg-surface-container-low/30" data-cab-type="prime-sedan" data-eta="Fast pickup (2 mins)" data-name="Prime Sedan" data-price="849">
+<div class="absolute -top-3 left-6 flex items-center gap-1 px-3 py-0.5 rounded-full bg-secondary text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[14px]">hotel_class</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">RECOMMENDED • TOP RATED</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-5 mt-1">
+<div class="flex items-center gap-4">
+<div class="w-20 h-20 rounded-xl bg-secondary-fixed/50 flex items-center justify-center p-2 shrink-0">
+<span class="material-symbols-outlined text-[44px] text-secondary">airport_shuttle</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Prime Sedan</h4>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Extra Legroom</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Dzire, Etios • High speed highway clearance</p>
+<div class="flex flex-wrap items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">airline_seat_recline_normal</span> 4 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">luggage</span> 3 Big Bags</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">verified</span> Chauffeur Driven</span>
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">bolt</span> Fast Pickup (2 mins)</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between border-t md:border-t-0 pt-3 md:pt-0 gap-1 shrink-0">
+<div class="text-right">
+<span class="font-body-sm text-body-sm line-through text-on-surface-variant block">₹980</span>
+<span class="font-headline-lg text-headline-lg text-secondary">₹849</span>
+</div>
+<div class="select-indicator flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-label-sm bg-secondary text-on-secondary shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Selected</span>
+</div>
+</div>
+</div>
+</div>
+<div class="cab-option group relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-md transition-all cursor-pointer" data-cab-type="prime-suv" data-eta="6 mins away" data-name="Prime SUV" data-price="1249">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+<div class="flex items-center gap-4">
+<div class="w-20 h-20 rounded-xl bg-surface-container-low flex items-center justify-center p-2 shrink-0">
+<span class="material-symbols-outlined text-[44px] text-primary">rv_hookup</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Prime SUV</h4>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Family Travel</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Ertiga, Innova Crysta • Large luggage carrier rack</p>
+<div class="flex flex-wrap items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">airline_seat_recline_normal</span> 6 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">luggage</span> 4 Bags</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">speed</span> Highway Ready</span>
+<span class="flex items-center gap-1 text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">schedule</span> 6 mins away</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between border-t md:border-t-0 pt-3 md:pt-0 gap-1 shrink-0">
+<div class="text-right">
+<span class="font-body-sm text-body-sm line-through text-on-surface-variant block">₹1,450</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">₹1,249</span>
+</div>
+<span class="select-indicator px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Select</span>
+</div>
+</div>
+</div>
+<div class="cab-option group relative bg-surface-container-lowest rounded-2xl p-5 shadow-sm hover:shadow-md transition-all cursor-pointer" data-cab-type="tempo" data-eta="Pre-scheduled booking" data-name="Tempo Traveller" data-price="2899">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+<div class="flex items-center gap-4">
+<div class="w-20 h-20 rounded-xl bg-surface-container-low flex items-center justify-center p-2 shrink-0">
+<span class="material-symbols-outlined text-[44px] text-primary">directions_bus</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Tempo Traveller</h4>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Group Transit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Force Urbania / Winger • Recliner business seats</p>
+<div class="flex flex-wrap items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">groups</span> 12-16 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">luggage</span> 10 Bags</span>
+<span class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">event_upcoming</span> Pre-scheduled booking</span>
+</div>
+</div>
+</div>
+<div class="flex md:flex-col items-center md:items-end justify-between border-t md:border-t-0 pt-3 md:pt-0 gap-1 shrink-0">
+<div class="text-right">
+<span class="font-body-sm text-body-sm line-through text-on-surface-variant block">₹3,200</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">₹2,899</span>
+</div>
+<span class="select-indicator px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant">Select</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+<div class="bg-gradient-to-r from-surface-container-high to-surface-container-low rounded-2xl p-5 flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Transparent Fare Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No peak surge or hidden night tolls. Toll charges of ₹110 for Bengaluru Airport Expressway are included.</p>
+</div>
+</div>
+<div class="bg-gradient-to-br from-tertiary-fixed-dim/30 to-tertiary-fixed/20 rounded-2xl p-5 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-on-tertiary-container text-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_offer</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-tertiary-container uppercase tracking-wide">BLRAIRPORT</span>
+<span class="px-2 py-0.5 rounded-full bg-on-tertiary-container/10 font-label-sm text-label-sm text-on-tertiary-container">₹100 Off</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Auto-applied for direct airport transfers</p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container shadow-sm transition-colors" type="button">
+              Applied
+            </button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">flight_takeoff</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Add Flight Number for On-time Driver Adjustment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">We track terminal traffic &amp; flight schedule delays</span>
+</div>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<input class="px-3 py-2 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-secondary w-full sm:w-36 uppercase" placeholder="e.g. 6E 2134" type="text"/>
+<button class="px-3 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm shrink-0" type="button">
+              Save
+            </button>
+</div>
+</div>
+</section>
+<aside class="lg:col-span-4 sticky top-28 space-y-5">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-location="Kempegowda International Airport Bengaluru" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0EtlGj8Lo2a8UwGlW_i4CWLPcHk11svw-2JT0NhzF2OwWUhWezbagjz0atVmjwGZxeMZa59mUZEO79cyIVqsbIEMa6UhM2ptFQGO7CqYbziqhh7O_md8V9pKyUZ9udAhYDntLnnz3jeOjTVeRTkJJ8ZJjHpfbJJQDoEl9hnIdtJ31D9g7QunrnLx-0X_OYy5wR-QGGXDzUhuo6n1dJvO4TSVaqNiNQEmPzvCMyZu_JwKWSevQ8O3R')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-4 text-surface-container-lowest">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 backdrop-blur-md px-2 py-0.5 rounded text-surface-container-lowest uppercase tracking-wider">Fastest Route</span>
+<span class="font-label-md text-label-md text-surface-container-lowest font-medium">Via Bellary Road</span>
+</div>
+<div class="flex items-center justify-between text-surface-container-lowest/90 text-body-sm font-body-sm">
+<span>Indiranagar → Hebbal → T2</span>
+<span class="text-emerald-400 font-label-md font-label-md flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  Smooth Traffic
+                </span>
+</div>
+</div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md p-2 rounded-xl shadow-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span class="font-label-sm text-label-sm">Live GPS</span>
+</div>
+</div>
+<div class="p-5 space-y-4">
+<div class="flex items-center justify-between border-b border-surface-container-low pb-3">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Selected Cab</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface" id="sidebar-cab-name">Prime Sedan</h4>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-secondary uppercase block">Est. Arrival</span>
+<span class="font-label-md text-label-md text-on-surface" id="sidebar-cab-eta">2 mins</span>
+</div>
+</div>
+<div class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span>Base Fare (38.5 km)</span>
+<span class="text-on-surface" id="sidebar-base-fare">₹839</span>
+</div>
+<div class="flex justify-between">
+<span>Airport Expressway Toll</span>
+<span class="text-on-surface">₹110</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Coupon (BLRAIRPORT)</span>
+<span>- ₹100</span>
+</div>
+<div class="flex justify-between">
+<span>Taxes &amp; GST (5%)</span>
+<span class="text-on-surface">Included</span>
+</div>
+</div>
+<div class="pt-3 border-t border-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Total Payable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All taxes included</span>
+</div>
+<div class="text-right">
+<span class="font-headline-xl text-headline-xl text-secondary" id="sidebar-total-fare">₹849</span>
+</div>
+</div>
+<button class="w-full h-[52px] rounded-2xl bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-lg shadow-secondary/25 hover:bg-secondary/95 active:scale-[0.99] transition-all" type="button">
+<span>Continue to Booking</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-2 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-emerald-600 text-[16px]">check_circle</span>
+<span>Free cancellation up to 5 mins after driver confirms</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-4 flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface">Need help with Airport Luggage?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Airport assist desk available at Gate 4</p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  (function initVehicleSelect() {
+    const cards = document.querySelectorAll('.cab-option');
+    const cabNameEl = document.getElementById('sidebar-cab-name');
+    const totalFareEl = document.getElementById('sidebar-total-fare');
+    const baseFareEl = document.getElementById('sidebar-base-fare');
+    const cabEtaEl = document.getElementById('sidebar-cab-eta');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        cards.forEach(c => {
+          c.classList.remove('ring-2', 'ring-secondary', 'bg-surface-container-low/30');
+          const indicator = c.querySelector('.select-indicator');
+          if (indicator) {
+            indicator.className = 'select-indicator px-3 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant';
+            indicator.innerHTML = 'Select';
+          }
+          const price = c.querySelector('.font-headline-lg');
+          if (price) {
+            price.classList.remove('text-secondary');
+            price.classList.add('text-on-surface');
+          }
+        });
+
+        card.classList.add('ring-2', 'ring-secondary', 'bg-surface-container-low/30');
+        const indicator = card.querySelector('.select-indicator');
+        if (indicator) {
+          indicator.className = 'select-indicator flex items-center gap-1 px-3 py-1 rounded-full text-label-sm font-label-sm bg-secondary text-on-secondary shadow-sm';
+          indicator.innerHTML = '<span class="material-symbols-outlined text-[16px]">check_circle</span><span>Selected</span>';
+        }
+        const activePrice = card.querySelector('.font-headline-lg');
+        if (activePrice) {
+          activePrice.classList.remove('text-on-surface');
+          activePrice.classList.add('text-secondary');
+        }
+
+        const name = card.getAttribute('data-name');
+        const price = parseInt(card.getAttribute('data-price') || '849', 10);
+        const eta = card.getAttribute('data-eta');
+
+        if (cabNameEl) cabNameEl.textContent = name;
+        if (totalFareEl) totalFareEl.textContent = '₹' + price.toLocaleString('en-IN');
+        if (baseFareEl) baseFareEl.textContent = '₹' + (price - 10).toLocaleString('en-IN');
+        if (cabEtaEl) cabEtaEl.textContent = eta;
+      });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-auto"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-12"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"><div class="space-y-3"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[18px]">local_taxi</span></div><span class="font-headline-sm text-headline-sm text-primary">Safar Mobility</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Reliable intercity transfers, city rides, and holiday tour packages across 100+ transit corridors in India.</p></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3">Transit Services</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="explore-services" href="#">City Point-to-Point</a></li><li><a class="hover:text-primary transition-colors" data-path="explore-services" href="#">Outstation One-Way</a></li><li><a class="hover:text-primary transition-colors" data-path="explore-services" href="#">Airport Express Cabs</a></li><li><a class="hover:text-primary transition-colors" data-path="tour-packages" href="#">Curated Tour Packages</a></li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3">Customer Care</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="24x7-support" href="#">24x7 Helpline</a></li><li><a class="hover:text-primary transition-colors" data-path="my-trips" href="#">Track Live Booking</a></li><li><a class="hover:text-primary transition-colors" data-path="24x7-support" href="#">Safety Standards</a></li><li><a class="hover:text-primary transition-colors" data-path="offers" href="#">Corporate Cab Rental</a></li></ul></div><div><h4 class="font-label-lg text-label-lg text-on-surface mb-3">Emergency &amp; Helpline</h4><div class="p-3 rounded-xl bg-surface-container-low space-y-1"><p class="font-label-sm text-label-sm text-secondary uppercase">Direct Toll-Free</p><p class="font-headline-sm text-headline-sm text-on-surface">1800-420-SAFAR</p><p class="font-body-sm text-body-sm text-on-surface-variant">Instant SOS &amp; Road Assistance</p></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Safar Mobility Private Limited. All rights reserved.</p><div class="flex items-center gap-6"><a class="hover:text-on-surface transition-colors" data-path="24x7-support" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="24x7-support" href="#">Terms of Transit</a><a class="hover:text-on-surface transition-colors" data-path="24x7-support" href="#">Fare Breakdown</a></div></div></div></footer></body></html>
