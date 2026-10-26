@@ -6,6 +6,7 @@ import {VitePWA} from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
   return {
+    base: '/safarnama/',
     plugins: [
       react(),
       tailwindcss(),
@@ -13,30 +14,30 @@ export default defineConfig(() => {
         registerType: 'autoUpdate',
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
         manifest: {
-          id: '/',
+          id: '/safarnama/',
           name: 'Safar Mobility',
           short_name: 'Safar',
           description: 'Premier intercity, airport transfer and curated holiday tour booking portal across India.',
           theme_color: '#091426',
           background_color: '#faf8ff',
           display: 'standalone',
-          start_url: '/',
-          scope: '/',
+          start_url: '/safarnama/',
+          scope: '/safarnama/',
           icons: [
             {
-              src: '/pwa-192x192.png',
+              src: 'pwa-192x192.png',
               sizes: '192x192',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: '/pwa-512x512.png',
+              src: 'pwa-512x512.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'any',
             },
             {
-              src: '/pwa-maskable-512x512.png',
+              src: 'pwa-maskable-512x512.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'maskable',
